@@ -45,9 +45,6 @@
                                 <buttonConfiguration key="configuration" style="gray" image="Hospital Sign" title="">
                                     <color key="baseBackgroundColor" systemColor="linkColor"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <segue destination="RND-Kr-DIb" kind="show" id="XEE-pP-zkh"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ux3-un-w8s">
                                 <rect key="frame" x="252" y="344.66666666666669" width="124" height="111"/>
@@ -205,31 +202,6 @@
             <point key="canvasLocation" x="2045" y="-802"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="jZx-lB-H4K">
-            <objects>
-                <viewController id="RND-Kr-DIb" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ydw-WO-xWn">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is for hospitals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3e-79-Wyf">
-                                <rect key="frame" x="134" y="438" width="147" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="I4l-5o-dSH"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="wPW-g5-Nsj"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ewv-gw-zgB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3017" y="-802"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="FfB-FK-mnk">
             <objects>
                 <viewController id="LUs-Tm-YtJ" sceneMemberID="viewController">
@@ -253,6 +225,131 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IEn-Ui-KVV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3954" y="-802"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZVf-0Q-gpc">
+            <objects>
+                <viewController id="E1G-Sq-nuK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Aq1-Ma-NtM">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="3070"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fdq-2J-MwG">
+                                <rect key="frame" x="0.0" y="88" width="428" height="2982"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8YI-9L-Egl">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="3070"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="3070" id="6xq-RU-x6J"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What vaccines are there against COVID-19?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6x-ot-RLK">
+                                        <rect key="frame" x="25" y="24" width="379" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQX-19-wbm">
+                                        <rect key="frame" x="25" y="71" width="365" height="325"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">There are several COVID-19 vaccines validated for use by WHO (given Emergency Use Listing). The first mass vaccination programme started in early December 2020 and the number of vaccination doses administered is updated on a daily basis on the COVID-19 dashboard.
+
+</string>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What are the benefits of getting vaccinated?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdl-Fk-iWH">
+                                        <rect key="frame" x="24" y="349" width="420" height="75"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3Q-QH-j4P">
+                                        <rect key="frame" x="25" y="403" width="365" height="345"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Getting vaccinated could save your life. COVID-19 vaccines provide strong protection against serious illness, hospitalization and death. There is also some evidence that being vaccinated will make it less likely that you will pass the virus on to others, which means your decision to get the vaccine also protects those around you.</string>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who should get vaccinated against COVID-19?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUQ-gu-Evk">
+                                        <rect key="frame" x="10" y="725" width="394" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NyE-ff-Yha">
+                                        <rect key="frame" x="25" y="848" width="350" height="249"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">WHO recommends that while vaccine supply is limited, the people at highest risk of COVID-19 are vaccinated first. This includes people who are more likely to get severe disease if they are infected (older persons and people with existing health conditions) and people who are more likely to be exposed to the virus (such as health workers). People who are pregnant have a higher risk of serious illness and preterm birth if they are infected with COVID-19, so WHO recommends that they are also prioritized for vaccination, once the first priority groups have been vaccinated.</string>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who should not be vaccinated against COVID-19?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFS-Iu-Xgs">
+                                        <rect key="frame" x="44" y="1131" width="360" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTX-Wh-Hc7">
+                                        <rect key="frame" x="44" y="1231" width="331" height="347"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">There are very few conditions that would exclude someone from being vaccinated, but you should NOT be vaccinated if:
+
+1. You have a history of severe allergic reactions/anaphylaxis to any of the ingredients of the COVID-19 vaccine, in order to avoid possible adverse effects.
+2. You have a fever over 38.5ºC on the day of your vaccine appointment. Postpone until you have recovered.
+3. You currently have confirmed or suspected COVID-19. Wait until you have completed the mandated isolation period and your acute symptoms have passed to get vaccinated.</string>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Should I be vaccinated if I have had COVID-19?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0I-IX-prO">
+                                        <rect key="frame" x="44" y="1609" width="357" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNS-JK-I8G">
+                                        <rect key="frame" x="46" y="1638" width="357" height="348"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Yes. Even if you have already had COVID-19, you should be vaccinated. The protection that someone gains from having COVID-19 will vary greatly from person to person. The immunity people get from being vaccinated after having a natural infection is consistently very strong. Getting vaccinated even if you have had COVID-19 means you are more likely to be protected for longer.</string>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="8YI-9L-Egl" secondAttribute="bottom" id="Pn0-Ok-eg6"/>
+                                    <constraint firstItem="8YI-9L-Egl" firstAttribute="top" secondItem="Fdq-2J-MwG" secondAttribute="top" id="YMM-k4-nUp"/>
+                                    <constraint firstItem="8YI-9L-Egl" firstAttribute="leading" secondItem="Fdq-2J-MwG" secondAttribute="leading" id="Zpu-Uc-PVL"/>
+                                    <constraint firstAttribute="trailing" secondItem="8YI-9L-Egl" secondAttribute="trailing" id="wp9-dJ-Tc9"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="I3L-im-zqo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Fdq-2J-MwG" secondAttribute="bottom" id="Rns-QF-k9c"/>
+                            <constraint firstItem="8YI-9L-Egl" firstAttribute="width" secondItem="Aq1-Ma-NtM" secondAttribute="width" id="abx-ty-Zph"/>
+                            <constraint firstItem="Fdq-2J-MwG" firstAttribute="trailing" secondItem="I3L-im-zqo" secondAttribute="trailing" id="e31-QM-iBu"/>
+                            <constraint firstItem="Fdq-2J-MwG" firstAttribute="leading" secondItem="I3L-im-zqo" secondAttribute="leading" id="eav-6D-ytN"/>
+                            <constraint firstItem="Fdq-2J-MwG" firstAttribute="top" secondItem="I3L-im-zqo" secondAttribute="top" id="kgF-BT-Y51"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9z2-Q6-nJg"/>
+                    <size key="freeformSize" width="428" height="3070"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wtm-9i-gfM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2972" y="-107"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="YUp-i4-88K">
@@ -298,12 +395,12 @@
                                     <segue destination="gDp-xv-IST" kind="show" id="gCC-f5-ldZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljv-93-aZJ">
-                                <rect key="frame" x="125.66666666666669" y="449" width="177" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljv-93-aZJ">
+                                <rect key="frame" x="126" y="487" width="177" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Common Vaccine FAQS"/>
                                 <connections>
-                                    <segue destination="brA-IH-xsc" kind="show" id="dgo-rn-hlb"/>
+                                    <segue destination="E1G-Sq-nuK" kind="show" id="gOf-Js-Yux"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -505,6 +602,18 @@ from COVID-19?
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mA-0J-rg5">
+                                                <rect key="frame" x="49" y="1924" width="350" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="l2e-s7-YB6"/>
+                                                    <constraint firstAttribute="width" constant="350" id="ziC-i7-9gB"/>
+                                                </constraints>
+                                                <string key="text">People commonly report experiencing different combinations of the following symptoms: Difficulty breathing or shortness of breath. Tiredness or fatigue. Symptoms that get worse after physical or mental activities (also known as post-exertional malaise).
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -564,131 +673,6 @@ from COVID-19?
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P45-gf-zpx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2043.9252336448596" y="-130.23758099352054"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="wO0-rO-BEP">
-            <objects>
-                <viewController id="brA-IH-xsc" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="av6-7m-I1o">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="3000"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HOB-9T-rA6">
-                                <rect key="frame" x="0.0" y="88" width="428" height="2878"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M8H-Cy-r8T">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="3070"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What vaccines are there against COVID-19?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2EY-2u-Z9X">
-                                                <rect key="frame" x="22" y="33" width="379" height="52"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNj-h2-QZv">
-                                                <rect key="frame" x="22" y="80" width="365" height="325"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">There are several COVID-19 vaccines validated for use by WHO (given Emergency Use Listing). The first mass vaccination programme started in early December 2020 and the number of vaccination doses administered is updated on a daily basis on the COVID-19 dashboard.
-
-</string>
-                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What are the benefits of getting vaccinated?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ama-HV-jYW">
-                                                <rect key="frame" x="21" y="358" width="420" height="75"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmn-yc-2CH">
-                                                <rect key="frame" x="22" y="412" width="365" height="345"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Getting vaccinated could save your life. COVID-19 vaccines provide strong protection against serious illness, hospitalization and death. There is also some evidence that being vaccinated will make it less likely that you will pass the virus on to others, which means your decision to get the vaccine also protects those around you.</string>
-                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who should get vaccinated against COVID-19?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDN-H1-ohu">
-                                                <rect key="frame" x="7" y="734" width="394" height="56"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qmv-qa-zyU">
-                                                <rect key="frame" x="22" y="857" width="350" height="249"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">WHO recommends that while vaccine supply is limited, the people at highest risk of COVID-19 are vaccinated first. This includes people who are more likely to get severe disease if they are infected (older persons and people with existing health conditions) and people who are more likely to be exposed to the virus (such as health workers). People who are pregnant have a higher risk of serious illness and preterm birth if they are infected with COVID-19, so WHO recommends that they are also prioritized for vaccination, once the first priority groups have been vaccinated.</string>
-                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who should not be vaccinated against COVID-19?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCX-qj-si9">
-                                                <rect key="frame" x="41" y="1140" width="360" height="59"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyD-rO-qzh">
-                                                <rect key="frame" x="41" y="1240" width="331" height="347"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">There are very few conditions that would exclude someone from being vaccinated, but you should NOT be vaccinated if:
-
-1. You have a history of severe allergic reactions/anaphylaxis to any of the ingredients of the COVID-19 vaccine, in order to avoid possible adverse effects.
-2. You have a fever over 38.5ºC on the day of your vaccine appointment. Postpone until you have recovered.
-3. You currently have confirmed or suspected COVID-19. Wait until you have completed the mandated isolation period and your acute symptoms have passed to get vaccinated.</string>
-                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Should I be vaccinated if I have had COVID-19?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSE-j2-GD7">
-                                                <rect key="frame" x="41" y="1618" width="357" height="51"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pem-Gh-Kxv">
-                                                <rect key="frame" x="43" y="1647" width="357" height="348"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Yes. Even if you have already had COVID-19, you should be vaccinated. The protection that someone gains from having COVID-19 will vary greatly from person to person. The immunity people get from being vaccinated after having a natural infection is consistently very strong. Getting vaccinated even if you have had COVID-19 means you are more likely to be protected for longer.</string>
-                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="M8H-Cy-r8T" secondAttribute="bottom" id="Huf-yP-IHO"/>
-                                    <constraint firstItem="M8H-Cy-r8T" firstAttribute="height" secondItem="HOB-9T-rA6" secondAttribute="height" multiplier="1.06671" id="PJF-vi-aKS"/>
-                                    <constraint firstItem="M8H-Cy-r8T" firstAttribute="top" secondItem="HOB-9T-rA6" secondAttribute="top" id="Uqe-Sc-BEp"/>
-                                    <constraint firstAttribute="trailing" secondItem="M8H-Cy-r8T" secondAttribute="trailing" id="sfF-gd-0h6"/>
-                                    <constraint firstItem="M8H-Cy-r8T" firstAttribute="leading" secondItem="HOB-9T-rA6" secondAttribute="leading" id="vVP-hu-L2C"/>
-                                    <constraint firstItem="M8H-Cy-r8T" firstAttribute="centerX" secondItem="HOB-9T-rA6" secondAttribute="centerX" id="wHA-EJ-HNC"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="UV9-vy-ueg"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="HOB-9T-rA6" firstAttribute="top" secondItem="UV9-vy-ueg" secondAttribute="top" id="YaZ-D6-949"/>
-                            <constraint firstItem="HOB-9T-rA6" firstAttribute="leading" secondItem="UV9-vy-ueg" secondAttribute="leading" id="epx-Yj-yr8"/>
-                            <constraint firstItem="UV9-vy-ueg" firstAttribute="bottom" secondItem="HOB-9T-rA6" secondAttribute="bottom" id="hJs-yC-LiO"/>
-                            <constraint firstItem="UV9-vy-ueg" firstAttribute="trailing" secondItem="HOB-9T-rA6" secondAttribute="trailing" id="qQ7-L4-NWW"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="rNy-tC-DfU"/>
-                    <size key="freeformSize" width="428" height="3000"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0MO-CQ-KGK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3016.8224299065419" y="-131.53347732181427"/>
         </scene>
     </scenes>
     <resources>
