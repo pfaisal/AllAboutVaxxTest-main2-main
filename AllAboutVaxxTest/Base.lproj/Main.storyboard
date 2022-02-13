@@ -607,7 +607,7 @@ from COVID-19?
                                                 <rect key="frame" x="22" y="412" width="365" height="345"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <string key="text">Getting vaccinated could save your life. COVID-19 vaccines provide strong protection against serious illness, hospitalization and death. There is also some evidence that being vaccinated will make it less likely that you will pass the virus on to others, which means your decision to get the vaccine also protects those around you.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -621,7 +621,7 @@ from COVID-19?
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qmv-qa-zyU">
                                                 <rect key="frame" x="22" y="857" width="350" height="249"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <mutableString key="text">WHO recommends that while vaccine supply is limited, the people at highest risk of COVID-19 are vaccinated first. This includes people who are more likely to get severe disease if they are infected (older persons and people with existing health conditions) and people who are more likely to be exposed to the virus (such as health workers). People who are pregnant have a higher risk of serious illness and preterm birth if they are infected with COVID-19, so WHO recommends that they are also prioritized for vaccination, once the first priority groups have been vaccinated.</mutableString>
+                                                <string key="text">WHO recommends that while vaccine supply is limited, the people at highest risk of COVID-19 are vaccinated first. This includes people who are more likely to get severe disease if they are infected (older persons and people with existing health conditions) and people who are more likely to be exposed to the virus (such as health workers). People who are pregnant have a higher risk of serious illness and preterm birth if they are infected with COVID-19, so WHO recommends that they are also prioritized for vaccination, once the first priority groups have been vaccinated.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -636,11 +636,11 @@ from COVID-19?
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyD-rO-qzh">
                                                 <rect key="frame" x="41" y="1240" width="331" height="347"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <mutableString key="text">There are very few conditions that would exclude someone from being vaccinated, but you should NOT be vaccinated if:
+                                                <string key="text">There are very few conditions that would exclude someone from being vaccinated, but you should NOT be vaccinated if:
 
 1. You have a history of severe allergic reactions/anaphylaxis to any of the ingredients of the COVID-19 vaccine, in order to avoid possible adverse effects.
 2. You have a fever over 38.5ºC on the day of your vaccine appointment. Postpone until you have recovered.
-3. You currently have confirmed or suspected COVID-19. Wait until you have completed the mandated isolation period and your acute symptoms have passed to get vaccinated.</mutableString>
+3. You currently have confirmed or suspected COVID-19. Wait until you have completed the mandated isolation period and your acute symptoms have passed to get vaccinated.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
